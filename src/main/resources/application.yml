@@ -6,6 +6,9 @@ spring:
     config:
       server:
         git:
+          timeout: 5
+          clone-on-start: true
+          force-pull: true
           uri: https://github.com/dkotrada/config-repo
           default-label: main
 
